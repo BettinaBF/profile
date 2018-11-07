@@ -114,6 +114,7 @@ table img {
 #img-damiens{
   width: 70px;
   height: 70px;
+  opacity: 0.5;
 }
 
 @media (max-width: 960px) {
