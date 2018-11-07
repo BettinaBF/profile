@@ -20,6 +20,7 @@ h2{
 h3{
   margin-left: 30px;
   text-align: center;
+  font-size: 30px;
 }
 
 h1, h2, h3 {
@@ -46,8 +47,7 @@ a{
 
 a:hover {
   text-decoration: none;
-  color: rgba(236, 1, 1, 0.7);
-  font-size: 13px;
+  color: rgba(230, 47, 137, 0.7);
 }
 
 p{
@@ -83,12 +83,6 @@ table img {
   margin: 25px 200px;
 }
 
-#profile-picture{
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  border: rgba(120,120,120, 0.7);
-}
 
 .social-logo > li a{
   font-size:25px;
@@ -98,12 +92,22 @@ table img {
   display: inline;
   margin: 5px;
   text-align: center;
+}
 
+.words-pink{
+  font-weight: bold;
+  font-size:1.3em;
+  color:rgb(230, 47, 137);
+}
+#profile-picture{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: rgba(120,120,120, 0.7);
 }
 
 #link-intext{
   text-decoration: none;
-  color: rgba(70,70,70,0.9);
 }
 
 #social-media{
@@ -115,8 +119,34 @@ table img {
   width: 70px;
   height: 70px;
   opacity: 0.5;
+  align-items: left;
 }
 
+#speech-bubble-text{
+  color: rgb(255,255,255);
+}
+
+.speech-bubble{
+  position: relative;
+  background: rgb(250, 0, 139);
+  border-radius: .7em;
+  padding: 5px;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: rgb(250, 0, 139);
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
 @media (max-width: 960px) {
   .container {
     width: 700px;
